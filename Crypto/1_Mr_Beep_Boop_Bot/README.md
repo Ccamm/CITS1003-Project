@@ -13,3 +13,9 @@
 **Challenge Files:** msg.txt
 
 **Flag:** CITS1003{b33p_b00ps_w3r3_jV5sT_b1N!1!!}
+
+## Solution
+
+* The msg is in binary.
+
+* Change all the `beep` to 1 and `boop` to 0.
