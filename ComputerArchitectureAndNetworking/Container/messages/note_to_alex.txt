@@ -1,0 +1,14 @@
+Hi Alex,
+
+I have decided to use our new Password Manager Web Server to store your password, since you have access to my SSH key and need to be more secure.
+The web server is running locally (IP address 127.0.0.1) on this machine on port 1337 and requires sending the following password in a POST request.
+
+Password: imjustgonnawhackmykeyboardforabitR3DSAV76ydwsqa8hb7HD
+
+Unfortunately the web server is not ready to be exposed to the internet, so the easiest way would be to use either curl or wget.
+
+Once again, BE CAREFUL WITH THOSE CREDENTIALS! If someone gets access to my account they could hack the entire server since I can use sudo for certain commands!
+
+Regards,
+
+David
