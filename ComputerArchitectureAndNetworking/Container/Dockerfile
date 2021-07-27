@@ -59,5 +59,5 @@ COPY flags/flag4.txt /home/david/flag4.txt
 RUN chown david:david /home/david/flag4.txt && chmod 400 /home/david/flag4.txt
 
 RUN echo "david ALL=(ALL) NOPASSWD: /usr/bin/vim" >>  /etc/sudoers.d/david
-COPY flags/flag5.txt /root/flag5.txt
+COPY flags/flag5.txt /root/hackers_reward.txt
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]

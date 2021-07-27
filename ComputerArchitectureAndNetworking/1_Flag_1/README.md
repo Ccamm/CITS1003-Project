@@ -10,10 +10,12 @@
 
 We have recently been testing a new shared lab environment for all students to use! However, we had some serious security issues and we got hacked! Fortunately, we were able to revert to an older version and **changed the SSH port** so hackers cannot easily get in! We believe our systems are secure, but we have requested that you do a penetration test for us to make sure our systems are secure!
 
-Firstly, can you find the new SSH port? If you do find it you can login using the following credentials, but we doubt that you can find it since it is no longer port 22!
+Firstly, can you find the new SSH port? You'll need to use a port scanner like **nmap** to find the new port number for SSH and if you do find it you can login using the following credentials. However, we doubt that you can find it since it is no longer port 22!
 
 **Username:** student
 **Password:** cybernemosynecits1003
+
+The flag is in the file called **flag1.txt** in `/home/student`.
 
 **Flag:** CITS1003{i4m_1n_p33p51!1!n0W_2_gIt_mOaR_cR3d5!}
 
