@@ -12,6 +12,8 @@ Man some of these cats go absolutely wild! Last Saturday, I went to a house part
 
 Can you teach this feline fleabag a lesson and crack their password?
 
+You'll need a hash cracker like *HashCat* using a password dump such as the *RockYou wordlist*.
+
 **Challenge Files:** hex_cipher.txt
 
 **Flag:** qwertyuiopasdfghjklqwertyuiopasd
