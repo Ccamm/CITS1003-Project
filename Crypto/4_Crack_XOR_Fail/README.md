@@ -8,7 +8,7 @@
 
 **Description:**
 
-Can you recover the original plaintext that was encrypted using XOR with a key 8 bytes long? The ciphertext is encoded as hex values and the plaintext is in the format **CITS1003{ ... }**.
+Can you recover the original plaintext that was encrypted using XOR with a key that is 8 bytes long? The ciphertext is encoded as hex values and the plaintext is in the format of **CITS1003{ ... }**.
 
 ```
 2a4d748d9c8edf33126710eee1e1844e06534e81ddd2db31075013a6f9e1db541d50419dc6e1de325b2501e1d0
