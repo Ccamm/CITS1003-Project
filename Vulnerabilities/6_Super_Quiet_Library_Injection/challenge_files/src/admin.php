@@ -2,7 +2,6 @@
 session_start();
 include("db.php");
 if (!isset($_SESSION["logged_in"])) {
-	echo $_SESSION;
 	header("Location: /login.php");
 	exit();
 }
