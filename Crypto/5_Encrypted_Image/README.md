@@ -4,7 +4,7 @@
 
 **Category:** Cryptography
 
-**Difficulty:** Medium
+**Difficulty:** Hard
 
 **Description:**
 
