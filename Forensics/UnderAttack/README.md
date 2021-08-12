@@ -108,7 +108,7 @@ Seeing the requests to `/secure/vulnerabilities/fi/?page=../../hackable/uploads/
 
 It is speculated that the webshell was used to upload and execute some malware onto the Windows server, that can be revealed by analysing the POST requests that were sent.
 
-**What was the name of the malware that was uploaded onto the server?**
+**What was the name of the exe that was uploaded onto the server?**
 
 Your answer should be in the format of `something.exe`. It isn't `malware.exe` that is used in the following task.
 
