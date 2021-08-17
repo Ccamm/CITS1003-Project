@@ -2,7 +2,7 @@
 
 Wireshark is a network capture and analysis tool which is really useful in forensics to analyse what the adversary has done on the network.
 
-Although the recommended method of using Wireshark is downloading it from [here](https://www.wireshark.org/#download), we will use `docker` instead to run Wireshark instead. Run the following `docker run` command in your terminal on your host machine to pull the Wireshark image and start it.
+Although the recommended method of using Wireshark is downloading it from [**here**](https://www.wireshark.org/#download), but can use `docker` instead to run Wireshark. Run the following `docker run` command in your terminal on your host machine to pull the Wireshark image and start it.
 
 ```bash
 docker run -d \
@@ -16,17 +16,17 @@ docker run -d \
   ghcr.io/linuxserver/wireshark
 ```
 
-What this container does is start a server at [http://localhost:3000/](http://localhost:3000/) that you can visit in your browser to view Wireshark, as shown below.
+What this container does is start a server at [**http://localhost:3000/**](http://localhost:3000/) that you can visit in your browser to view Wireshark, as shown below.
 
 ![](images/openwireshark.png)
 
-Next we will need to copy the challenge file `captured.pcapng` into this Docker container so we can open it in Wireshark. In your terminal navigate to the same folder where you have extracted `captured.pcapng` and run the following `docker cp`, which will copy the `captured.pcapng` to `/captured.pcapng` on the Wireshark container.
+Next we will need to copy the challenge file `captured.pcapng` into this Docker container so we can open it in Wireshark. In your terminal navigate to the same folder where you have extracted `captured.pcapng` and run the following `docker cp` command, which will copy the `captured.pcapng` to `/captured.pcapng` on the Wireshark container.
 
 ```bash
-docker cp ./captured.pcapng wireshark-con:/captured.pcapng
+docker cp ./captured.pcapng wireshark:/captured.pcapng
 ```
 
-Now you can open the `captured.pcapng` file clicking the **File** then **Open** from inside of Wireshark. Navigate the the `/` folder and open `captured.pcapng` and if you did it correctly you'll see something similar to the below screenshot.
+Now you can open the `captured.pcapng` file clicking the **File** then **Open** from inside of Wireshark. Navigate to the `/` folder and open `captured.pcapng` and if you did it correctly you'll see something similar to the below screenshot.
 
 ![](images/filewireshark.png)
 

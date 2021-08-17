@@ -31,6 +31,6 @@ RUN chown -R www-data:www-data /var/www/html /var/lib/nginx /run/database /run/d
 RUN chmod 666 /run/database/website.db
 
 # Expose the port nginx is listening on
-EXPOSE 1337
+EXPOSE 1000
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]

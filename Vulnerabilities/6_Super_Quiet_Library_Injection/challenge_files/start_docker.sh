@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker build -t super-quiet-library . && \
-docker run -it -p 1337:1337 --rm --name super-quiet-library-container super-quiet-library
+docker build -t super-quiet-library-1000 . && \
+docker run -it -p 1000:1000 --rm --name super-quiet-library-container super-quiet-library-1000

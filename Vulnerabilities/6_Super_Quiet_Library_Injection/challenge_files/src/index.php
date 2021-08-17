@@ -56,7 +56,7 @@
 									<span class="date">April 25, 2017</span>
 									<h2><a href="#">You should be<br />
 									Quiet</a></h2>
-									<p>People are procrasting doing their uni work here and would be grumpy if you make any noises!</p>
+									<p>People are procrastinating doing their uni work here and would be grumpy if you make any noises!</p>
 								</header>
 								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
 								<ul class="actions special">
