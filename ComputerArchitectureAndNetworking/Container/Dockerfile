@@ -18,9 +18,12 @@ RUN useradd -m -G staff -s /bin/bash -p '$6$lWfbDYkq3dNGbG8l$/aAWF7hzPBMK2z7wJ4I
 RUN useradd -m -G staff -s /bin/bash -p '$6$oMm1ZjxMg03gGMqT$yCPv5GgqKdlMHjQs//f984tGLjI6ac39/l.ERBCV5z3L3uk1WBthZZjd1.4jeVKaul7K82fdEjlcPqiSiJovW.' alex
 RUN useradd -m -G staff david
 
+RUN echo 'set +o history' > /etc/profile.d/disable.history.sh
+
 # Setup flag 1
 COPY flags/flag1.txt /home/student/flag1.txt
 RUN chown student:student /home/student/flag1.txt && chmod 400 /home/student/flag1.txt
+RUN ln -s /dev/null /home/student/.bash_history
 
 # Setup flag 2
 COPY messages/read_me_jeff.txt /home/jeff/read_me_jeff.txt
@@ -28,9 +31,11 @@ RUN chown alex:alex /home/jeff/read_me_jeff.txt && chmod 444 /home/jeff/read_me_
       mkdir -p /usr/share/python/.supersecretfolder/.hiddenfoldersaresosecure && \
       echo 'Username: jeff' > /usr/share/python/.supersecretfolder/.hiddenfoldersaresosecure/jeffs_creds.txt && \
       echo 'Password: mahnam31sj33ff' >> /usr/share/python/.supersecretfolder/.hiddenfoldersaresosecure/jeffs_creds.txt
+RUN chmod 444 /usr/share/python/.supersecretfolder/.hiddenfoldersaresosecure/jeffs_creds.txt
 
 COPY flags/flag2.txt /home/jeff/flag2.txt
 RUN chown jeff:jeff /home/jeff/flag2.txt && chmod 400 /home/jeff/flag2.txt
+RUN ln -s /dev/null /home/jeff/.bash_history
 
 # Setup flag 3
 COPY other_files/passmanager.php /var/www/html/index.php
@@ -42,6 +47,7 @@ RUN chown alex:staff /home/alex/note_to_alex.txt && chmod 440 /home/alex/note_to
 
 COPY flags/flag3.txt /home/alex/flag3.txt
 RUN chown alex:alex /home/alex/flag3.txt && chmod 400 /home/alex/flag3.txt
+RUN ln -s /dev/null /home/alex/.bash_history
 
 USER alex
 RUN mkdir /home/alex/topsecret && \
@@ -57,6 +63,9 @@ RUN mkdir /home/david/.ssh && chmod 770 /home/david/.ssh && \
 USER root
 COPY flags/flag4.txt /home/david/flag4.txt
 RUN chown david:david /home/david/flag4.txt && chmod 400 /home/david/flag4.txt
+RUN ln -s /dev/null /home/david/.bash_history
+
+RUN ln -s /dev/null /root/.bash_history
 
 RUN echo "david ALL=(ALL) NOPASSWD: /usr/bin/vim" >>  /etc/sudoers.d/david
 COPY flags/flag5.txt /root/hackers_reward.txt
